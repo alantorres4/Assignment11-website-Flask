@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to Alan Torres' Assignment 11 web site!</title>
+	</head>
+	
+	<body bgcolor="white">
+		<h1>Welcome to Alan Torres' Assignment 11 web site!</h1>
+		</br> <hr> 
+		
+		(This section of the page is not required.) </br> </br>
+		
+		<a href="assignment11.html">Refresh page</a>  
+		<a href="assignment11.html-account-info.txt">Account info file</a>
+		<a href="assignment11.html-account-info-backup.txt">Account info file (backup)</a>
+		<a href="assignment11.html?reset=true" name="reset" value="True">Reset accounts</a>
+		</br> </br>
+		
+		<font color="{{errorColor}}"> {{errorMessage}} </font> 
+		<hr> </br>
+		
+		<form name="existingAccount" method="get" action="assignment11.html">
+			If you have an exising account, log in here: </br>
+			User name: <input type="text" id="uname" name="uname"> </input> </br>
+			Password:  &nbsp; <input type="password" id="pword" name="pword"> </input> </br>
+			
+			<input type="hidden" name="returningUser" value="returning">
+			<input type="submit" value="Login"> </input> </br> </br>
+		</form>
+		
+			<hr>
+			
+		<form name="createAccount" method="get" action="assignment11.html">
+			</br>Otherwise, if you'd like to create an account, please fill out the following form: <br>
+			User name: <input type="text" id="newuname" name="newuname"> </input> </br>
+			Password:  &nbsp; <input type="password" id="newpword" name="newpword"> </input> </br> 
+			First name: <input type="text" id="fname" name="fname"> </input> </br>
+			Last name: <input type="text" id="lname" name="lname"> </input> </br> 
+			
+			<input type="hidden" name="create" value="True">
+			<input type="submit" value="Create Account"> </input> </br>
+			
+		</form>
+		
+	</body>
+
+</html>
