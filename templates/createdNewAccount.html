@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{titleBoi}}</title>
+	</head>
+	
+	<body bgcolor={{backgroundColor}}>
+		<h1>{{titleBoi}}</h1>
+		</br> Welcome {{uname}}!
+		</br> <hr> 
+		
+		(This section of the page is not required.) </br> </br>
+		
+		<a href="assignment11.html">Refresh page</a>  
+		<a href="assignment11.html-account-info.txt">Account info file</a>
+		<a href="assignment11.html-account-info-backup.txt">Account info file (backup)</a>
+		<a href="assignment11.html?reset=true">Reset accounts</a>
+		</br> 
+			<p style="color:red">{{updatedMessage}}
+		</br> <hr> </br>
+		
+		<img src={{imageURL}} alt="imageShouldBeHere" height=200 width=200>
+		
+		</br> </br>
+		
+		
+		<form method="get" action="assignment11.html">
+			<input type="hidden" name="unameGet" value="{{uname}}">
+			<input type="hidden" name="logout" value="doLogout"> 
+			<input type="submit" value="Logout"></input> </br> 
+		</form>
+		
+		</br> </br>
+		
+		<hr> </br>
+		
+		<form method="get" action="assignment11.html" name="personalize">
+			First name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="fname" id="fname" value={{fname}}> </input> </br>
+			Last name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="lname" id="lname" value={{lname}}> </input> </br>
+			Background color: <input type="text" id="backgroundColor" name="backgroundColor" value={{backgroundColor}}> </input> </br>
+			Title: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="titleBoi" id="titleBoi" value="{{titleBoi}}"></input> </br>
+			Image: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="imageBoi" id="imageBoi " value="{{imageURL}}" size="100"> </input> </br>
+
+			<input type="hidden" name="unameHere" value="{{uname}}">
+			<input type="hidden" name="pwordHere" value="{{pword}}">
+			<input type="hidden" name="editAccountInfo" value="True">
+			<input type="submit" value="Edit Account Information"> </input>
+		
+		
+		</form>
+		
+	</body>
+</html>
